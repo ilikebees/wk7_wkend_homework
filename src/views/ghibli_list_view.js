@@ -4,4 +4,4 @@ const GhibliDetailView = require('./ghibli_detail_view');
 
 
 
-module.exports = GhibliListView;
+// module.exports = GhibliListView;

@@ -2,4 +2,4 @@ const GhibliDetailView = function () {};
 
 
 
-module.exports = GhibliDetailView;
+// module.exports = GhibliDetailView;
