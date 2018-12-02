@@ -7,9 +7,17 @@ const FilmListView = function (container) {
 
 FilmListView.prototype.bindEvents = function () {
   PubSub.subscribe('Ghibli:films-ready', (evt) => {
+    this.clearList(); //new
     this.renderFilmDetailViews(evt.detail);
   });
 };
+
+//new
+
+FilmListView.prototype.clearList = function () {
+  this.container.innerHTML = '';
+};
+//
 
 FilmListView.prototype.renderFilmDetailViews = function (films) {
   films.forEach((film) => {
